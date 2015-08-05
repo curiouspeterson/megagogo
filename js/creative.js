@@ -189,6 +189,10 @@
 	$('.follow-link').on('click', function() {
 	  ga('send', 'event', 'button', 'click', 'follow link');
 	});
+	
+	$('.chd-link').on('click', function() {
+	  ga('send', 'event', 'button', 'click', 'CHD link');
+	});
 
 
 	function hoverText() {
