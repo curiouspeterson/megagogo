@@ -193,6 +193,10 @@
 	$('.chd-link').on('click', function() {
 	  ga('send', 'event', 'button', 'click', 'CHD link');
 	});
+	
+	$('.shirt-link').on('click', function() {
+	  ga('send', 'event', 'button', 'click', 'shirt link');
+	});
 
 
 	function hoverText() {
