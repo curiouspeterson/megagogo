@@ -984,3 +984,8 @@ i.fa, .glyphicon {
     text-align: left;
     border-top: 1px solid #e5e5e5;
 }
+
+#shirt-link-container {
+    clear: both;
+    margin-top: 45px;
+}
