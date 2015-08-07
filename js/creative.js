@@ -144,12 +144,12 @@
 			document.getElementById(backers).innerHTML = elapsedSecs;
 			document.getElementById(amount).innerHTML = amountDonated;
 		
-			document.getElementById('update-backer-1').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.4));
+			document.getElementById('update-backer-1').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.45));
 			document.getElementById('update-backer-2').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.25));
 			document.getElementById('update-backer-3').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.15));
-			document.getElementById('update-backer-4').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.1));
-			document.getElementById('update-backer-5').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.075));
-			document.getElementById('update-backer-6').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.025));
+			document.getElementById('update-backer-4').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.12));
+			document.getElementById('update-backer-5').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.025));
+			document.getElementById('update-backer-6').innerHTML = numberWithCommas(Math.floor(divisibleDonars *.005));
 			
 	}
 	secondsRemaining();
