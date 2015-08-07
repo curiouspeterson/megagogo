@@ -998,3 +998,68 @@ a.modal-shirt-link{
   width: 25%;
   margin-left: 20px;
 }
+
+
+.alert-container{
+	position:relative;
+	max-height:1000px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+	 -o-transition: all .35s;
+    transition: all .35s;
+	overflow:hidden;
+	    top: -29px;
+}
+
+.alert-messages {
+    position: relative;
+
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.alert-info {
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+}
+
+.alert {
+    padding: 15px 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	overflow:hidden;
+    text-align: center;
+}
+
+.alert-dismissable .close, .alert-dismissible .close {
+    position: absolute;
+    top: 7px;
+    right: 11px;
+    color: inherit;
+}
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}

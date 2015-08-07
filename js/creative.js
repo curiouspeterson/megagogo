@@ -198,6 +198,15 @@
 	  ga('send', 'event', 'button', 'click', 'shirt link');
 	});
 
+	$('button.close').on('click', function() {
+  	  $( ".alert-container" ).css('max-height', 0)
+	});
+	
+	
+	$( "#clickme" ).click(function() {
+	  
+	});
+
 
 	function hoverText() {
 
@@ -263,6 +272,7 @@
 	        }
 	    });
 	}
+	
 
 
 
