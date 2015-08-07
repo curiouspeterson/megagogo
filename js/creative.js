@@ -197,15 +197,16 @@
 	$('.shirt-link').on('click', function() {
 	  ga('send', 'event', 'button', 'click', 'shirt link');
 	});
+	
+	$('.notification-link').on('click', function() {
+	  ga('send', 'event', 'button', 'click', 'notification link');
+	});
 
 	$('button.close').on('click', function() {
   	  $( ".alert-container" ).css('max-height', 0)
 	});
 	
-	
-	$( "#clickme" ).click(function() {
-	  
-	});
+
 
 
 	function hoverText() {
