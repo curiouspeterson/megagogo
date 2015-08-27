@@ -71,10 +71,11 @@
             var now = new Date();
             distance = end - now;
 			
-            if (distance < 0) {
+            if (distance <= 0) {
                 clearInterval(timer);
-                document.getElementById(id).innerHTML = 'Funded!';
+                document.getElementById(id).innerHTML = 'Not Funded';
 				document.getElementById('remaining-time').innerHTML = 'Campaign has ended';
+				document.getElementById('main-pledge-button').innerHTML = 'Campaign has ended';
 				
                 return;
             } else {
@@ -121,13 +122,17 @@
 
 			var amount = 'amount-pledged';
 			var backers = 'backers';
-			var individualDonation = 2926;
+			var individualDonation = 2640.3926;
 			var amountDonated;
 		
 			var firstDate = new Date('July 29, 2015 00:00:00');
 			var secondDate = new Date();
+			var today	= new Date('August 29 2015 11:59 PM')
+			if (secondDate >= today){
+				secondDate = today;
+			}
 	
-			var dif = firstDate.getTime() - secondDate.getTime()
+			var dif = firstDate.getTime() - secondDate.getTime();
 
 			var Seconds_from_T1_to_T2 = dif / 1000;
 			var elapsedSecs = Math.abs(Seconds_from_T1_to_T2);
@@ -138,7 +143,7 @@
 			var divisibleDonars = elapsedSecs;
 		
 			elapsedSecs = numberWithCommas(elapsedSecs);
-			amountDonated = numberWithCommas(amountDonated);
+			amountDonated = numberWithCommas(Math.round(amountDonated));
 		
 		
 			document.getElementById(backers).innerHTML = elapsedSecs;
