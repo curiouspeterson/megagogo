@@ -139,11 +139,13 @@
 		
 			var elapsedSecs = Math.floor(elapsedSecs);
 			amountDonated = elapsedSecs * individualDonation;
+			
+			amountDonated = '7,299,999,937';
 		
 			var divisibleDonars = elapsedSecs;
 		
 			elapsedSecs = numberWithCommas(elapsedSecs);
-			amountDonated = numberWithCommas(Math.round(amountDonated));
+			amountDonated = numberWithCommas(amountDonated);
 		
 		
 			document.getElementById(backers).innerHTML = elapsedSecs;
